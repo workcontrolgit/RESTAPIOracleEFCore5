@@ -3,6 +3,7 @@ using OracleEFCore5.Application.Exceptions;
 using OracleEFCore5.Application.Interfaces.Repositories;
 using OracleEFCore5.Application.Wrappers;
 using OracleEFCore5.Domain.Entities;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -10,7 +11,7 @@ namespace OracleEFCore5.Application.Features.Positions.Queries.GetPositionById
 {
     public class GetPositionByIdQuery : IRequest<Response<Position>>
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public class GetPositionByIdQueryHandler : IRequestHandler<GetPositionByIdQuery, Response<Position>>
         {
             private readonly IPositionRepositoryAsync _positionRepository;

@@ -10,7 +10,7 @@ namespace OracleEFCore5.Application.Features.Positions.Commands.UpdatePosition
 {
     public class UpdatePositionCommand : IRequest<Response<Guid>>
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public decimal Salary { get; set; }

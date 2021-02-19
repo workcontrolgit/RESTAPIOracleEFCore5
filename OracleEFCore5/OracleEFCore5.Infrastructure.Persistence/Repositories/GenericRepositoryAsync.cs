@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OracleEFCore5.Application.Interfaces;
 using OracleEFCore5.Infrastructure.Persistence.Contexts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
@@ -17,7 +18,7 @@ namespace OracleEFCore5.Infrastructure.Persistence.Repository
             _dbContext = dbContext;
         }
 
-        public virtual async Task<T> GetByIdAsync(int id)
+        public virtual async Task<T> GetByIdAsync(Guid id)
         {
             return await _dbContext.Set<T>().FindAsync(id);
         }

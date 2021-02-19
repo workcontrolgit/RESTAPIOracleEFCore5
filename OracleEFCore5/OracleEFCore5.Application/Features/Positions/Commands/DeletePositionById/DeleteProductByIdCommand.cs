@@ -10,7 +10,7 @@ namespace OracleEFCore5.Application.Features.Positions.Commands.DeletePositionBy
 {
     public class DeletePositionByIdCommand : IRequest<Response<Guid>>
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public class DeletePositionByIdCommandHandler : IRequestHandler<DeletePositionByIdCommand, Response<Guid>>
         {
             private readonly IPositionRepositoryAsync _positionRepository;

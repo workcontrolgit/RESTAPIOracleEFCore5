@@ -18,7 +18,7 @@
             <param name="filter"></param>
             <returns></returns>
         </member>
-        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Get(System.Int32)">
+        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Get(System.Guid)">
             <summary>
             GET api/controller/5
             </summary>
@@ -39,7 +39,7 @@
             <param name="command"></param>
             <returns></returns>
         </member>
-        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Put(System.Int32,OracleEFCore5.Application.Features.Positions.Commands.UpdatePosition.UpdatePositionCommand)">
+        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Put(System.Guid,OracleEFCore5.Application.Features.Positions.Commands.UpdatePosition.UpdatePositionCommand)">
             <summary>
             PUT api/controller/5
             </summary>
@@ -47,7 +47,7 @@
             <param name="command"></param>
             <returns></returns>
         </member>
-        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Delete(System.Int32)">
+        <member name="M:OracleEFCore5.WebApi.Controllers.v1.PositionsController.Delete(System.Guid)">
             <summary>
             DELETE api/controller/5
             </summary>
